@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contador</title>
+  </head>
+  <body class="flex-center">
+    <main class="flex-center">
+      <h1>Tabela de Pontos</h1>
+      <div class="table flex-center">
+        <div class="col flex-center">
+          <h2>Patente</h2>
+          <p>Capitão</p>
+          <p>Sub. Cap. Direito</p>
+          <p>Sub. Cap. Esquerdo</p>
+        </div>
+        <div class="col flex-center">
+          <h2>Nomes</h2>
+          <p>Isaac</p>
+          <p>E. Edimir</p>
+          <p>Kauan</p>
+        </div>
+        <div class="col flex-center">
+          <h2>Pontos</h2>
+          <div class="flex-center">
+            <i class="ph-bold ph-minus minus" onclick="removeP1()"></i>
+            <p id="p1">0</p>
+            <i class="ph-bold ph-plus plus" onclick="addP1()"></i>
+          </div>
+          <div class="flex-center">
+            <i class="ph-bold ph-minus minus" id="mp2"></i>
+            <p id="p2">0</p>
+            <i class="ph-bold ph-plus plus" id="pp2"></i>
+          </div>
+          <div class="flex-center">
+            <i class="ph-bold ph-minus minus" id="mp3"></i>
+            <p id="p3">0</p>
+            <i class="ph-bold ph-plus plus" id="pp3"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
